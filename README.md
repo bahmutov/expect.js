@@ -1,4 +1,7 @@
-# Expect
+# Expect = should
+
+In the browser this module registers itself as `window.should` to avoid
+name clash with Jasmine's expect.
 
 Minimalistic BDD assertion toolkit based on
 [should.js](http://github.com/visionmedia/should.js)
@@ -208,7 +211,7 @@ and shown/processed by the test runner.
 
 ## Differences with should.js
 
-- No need for static `should` methods like `should.strictEqual`. For example, 
+- No need for static `should` methods like `should.strictEqual`. For example,
   `expect(obj).to.be(undefined)` works well.
 - Some API simplifications / changes.
 - API changes related to browser compatibility.
